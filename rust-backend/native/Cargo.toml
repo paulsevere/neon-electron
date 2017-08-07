@@ -1,0 +1,17 @@
+[package]
+authors = ["Paul Severe <pjo2110@columbia.edu>"]
+build = "build.rs"
+license = "MIT"
+name = "rust-backend"
+version = "0.1.0"
+[build-dependencies]
+neon-build = "0.1.18"
+
+[dependencies]
+dump = "0.1.1"
+neon = "0.1.18"
+walkdir = "1.0.7"
+
+[lib]
+crate-type = ["dylib"]
+name = "rust_backend"
